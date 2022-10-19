@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histogram - Assignment 2</title>
+    <link rel="stylesheet" href="histogram.css">
+    <script type="text/javascript" src="calculate.js" defer></script>
+</head>
+
+<body onload="init()">
+    <header>
+        <h1>Histogram Generator</h1>
+    </header>
+    <ol>
+        <li>Select CSV file to upload</li>
+        <li>Press "Submit" to generate the histogram</li>
+    </ol>
+    <form id="upload">
+        <input type="file" id="selectedFile" accept=".csv">
+    </form>
+    <section class="body">
+        <section class="lb">
+            <h3>Lower Bounds</h3>
+            <p class="bounds">Input custom lower bounds (allows 1 decimal)</p>
+            <form id="formbounds">
+                <Table class="bounds" id="tablebounds">
+                    <tr>
+                        <td>Max</td>
+                        <td><input id="text1" value="100" maxlength="4" size="4">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A+</td>
+                        <td><input id="text2" value="95.0" maxlength="4" size="4">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td><input id="text3" value="90.0" maxlength="4" size="4">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A-</td>
+                        <td><input id="text4" value="85.0" maxlength="4" size="4">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>B+</td>
+                        <td><input id="text5" value="80.0" maxlength="4" size="4">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>B</td>
+                        <td><input id="text6" value="75.0" maxlength="4" size="4">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>B-</td>
+                        <td><input id="text7" value="70.0" maxlength="4" size="4">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>C+</td>
+                        <td><input id="text8" value="65.0" maxlength="4" size="4">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td><input id="text9" value="60.0" maxlength="4" size="4">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>C-</td>
+                        <td><input id="text10" value="55.0" maxlength="4" size="4">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>D</td>
+                        <td><input id="text11" value="50.0" maxlength="4" size="4">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td><input id="text12" value="0.0" maxlength="4" size="4"></td>
+                    </tr>
+                </Table>
+            </form>
+        </section>
+        <section class="stats">
+            <h3>Stats</h3>
+            <table class="stats" id="tablestats">
+                <tr>
+                    <td>Highest:</td>
+                    <td>
+                        <pre id="highest"> </pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lowest:</td>
+                    <td>
+                        <pre id="lowest"> </pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mean:</td>
+                    <td>
+                        <pre id="mean"> </pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Median:</td>
+                    <td>
+                        <pre id="median"> </pre>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section class="histogram">
+            <h3>Histogram</h3>
+        </section>
+    </section>
+    <pre id="fileContent"> </pre>
+</body>
+
+</html>

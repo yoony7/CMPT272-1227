@@ -1,0 +1,80 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    width: 100%;
+    background-color: #37474F;
+    font-family: Helvetica, sans-serif;
+    color: #FE6E3F;
+}
+
+span.Inventory {
+    color: white;
+}
+
+body {
+    background-color: #EDEFF1;
+}
+
+h1.Text {
+    margin: 20px;
+}
+
+img.menu_image {
+    margin: 20px;
+}
+
+.Page {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: Helvetica, sans-serif;
+    margin: auto;
+}
+
+@media (min-width: 550px) {
+    .Page {
+        flex-direction: row;
+    }
+}
+
+article.books {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1%;
+}
+
+article.links {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    flex: 1;
+    padding: 1%;
+}
+
+li.Business_hover {
+    display: none;
+}
+
+li.CS_hover {
+    display: none;
+}
+
+.Business:hover+.Business_hover {
+    display: block;
+    font-weight: 100;
+}
+
+.CS:hover+.CS_hover {
+    display: block;
+    font-weight: 100;
+}
+
+a {
+    text-decoration: none;
+    color: #9F3B3D
+}
