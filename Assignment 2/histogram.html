@@ -24,7 +24,11 @@
     <section class="body">
         <section class="lb">
             <h3>Lower Bounds</h3>
-            <p class="bounds">Input custom lower bounds (allows 1 decimal)</p>
+            <ul class="bounds">
+                <li>Input custom lower bounds (allows 1 decimal).</li>
+                <li>Hit "Enter" to update Stats and Histogram.</li>
+                <li>Note: numbers put out of order (ie. ascending order) will be sorted (descending)</li>
+            </ul>
             <form id="formbounds">
                 <Table class="bounds" id="tablebounds">
                     <tr>
@@ -118,11 +122,12 @@
                 </tr>
             </table>
         </section>
-        <section class="histogram">
+        <section id="histogram" class="histogram">
             <h3>Histogram</h3>
+            <canvas></canvas>
         </section>
     </section>
-    <pre id="fileContent"> </pre>
+    <pre class="boundError" id="boundError"></pre>
 </body>
 
 </html>
