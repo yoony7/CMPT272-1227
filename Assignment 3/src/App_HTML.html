@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <link rel="stylesheet" href="App_CSS.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.47/system.js"
+        integrity="sha512-mkBpeD76fJnxFHGZstCL0mPCW6E3RFtUzfp5Ye8oQg2rxQNHy4BgHsbmvSizsq3fgF4PGozPI1BzGCB/h1Yq5g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+</head>
+
+<body>
+    <script>
+        System.defaultJSExtensions = true
+        System.import('main')
+    </script>
+    <header>
+        <h1>
+            Farmer Hoggett's Pig Tracker
+        </h1>
+    </header>
+    <section class="body">
+        <form id="piglist">
+            <table class="piglist">
+                <caption>List of Pigs</caption>
+                <tr>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                </tr>
+                <tr>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
+                </tr>
+            </table>
+            <button id="addButton">Add</button>
+        </form>
+        <form id="newPigForm" class="newPigForm">
+            <table id="newPigTable" class="newPig">
+                <caption>Add New:</caption>
+                <tr>
+                    <td>Name</td>
+                    <td></Td>
+                </tr>
+                <tr>
+                    <td>Height</td>
+                    <td></Td>
+                </tr>
+                <tr>
+                    <td>Weight</td>
+                    <td></Td>
+                </tr>
+                <tr>
+                    <td>Personality</td>
+                    <td></Td>
+                </tr>
+                <tr>
+                    <td>Category</td>
+                    <td></Td>
+                </tr>
+                <tr>
+                    <td>
+                        <dynamic class="attribute"></dynamic>
+                    </td>
+                    <td></Td>
+                </tr>
+                <tr>
+                    <td>
+                        <dynamic class="value"></dynamic>
+                    </td>
+                    <td></Td>
+                </tr>
+            </table>
+            <button id="addPig">Add</button>
+        </form>
+    </section>
+    <br>
+    <section>
+        <form id="moreInfoForm">
+            <table id="moreInfoTable" class="moreInfo">
+                <caption>Details:</caption>
+                <tr>
+                    <td>Name</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Breed</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Height</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Weight</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Personality</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <dynamic class="attribute"></dynamic>
+                    </td>
+                    <td class="value"></td>
+                </tr>
+            </table>
+        </form>
+    </section>
+</body>
+
+</html>
