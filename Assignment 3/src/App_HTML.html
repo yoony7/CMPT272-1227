@@ -54,35 +54,73 @@
                 <caption>Add New:</caption>
                 <tr>
                     <td>Name</td>
-                    <td></Td>
+                    <td><input id="newPigName" maxlength="20" placeholder="Please write a name"></Td>
                 </tr>
                 <tr>
                     <td>Height</td>
-                    <td></Td>
+                    <td><input id="newPigHeight" maxlength="4" placeholder="Please provide the height"></Td>
                 </tr>
                 <tr>
                     <td>Weight</td>
-                    <td></Td>
+                    <td><input id="newPigWeight" maxlength="4" placeholder="Please provide the weight"></Td>
                 </tr>
                 <tr>
                     <td>Personality</td>
-                    <td></Td>
+                    <td><select id="newPigPersonality">
+                            <option value="" selected="selected">
+                                Select a Personality
+                            </option>
+                            <option value="Hardy">Hardy</option>
+                            <option value="Lonely">Lonely</option>
+                            <option value="Brave">Brave</option>
+                            <option value="Adamant">Adamant</option>
+                            <option value="Naughty">Naughty</option>
+                            <option value="Bold">Bold</option>
+                            <option value="Docile">Docile</option>
+                            <option value="Relaxed">Relaxed</option>
+                            <option value="Impish">Impish</option>
+                            <option value="Lax">Lax</option>
+                            <option value="Timid">Timid</option>
+                            <option value="Hasty">Hasty</option>
+                            <option value="Serious">Serious</option>
+                            <option value="Jolly">Jolly</option>
+                            <option value="Naive">Naive</option>
+                            <option value="Modest">Modest</option>
+                            <option value="Mild">Mild</option>
+                            <option value="Quiet">Quiet</option>
+                            <option value="Bashful">Bashful</option>
+                            <option value="Rash">Rash</option>
+                            <option value="Calm">Calm</option>
+                            <option value="Gentle">Gentle</option>
+                            <option value="Sassy">Sassy</option>
+                            <option value="Careful">Careful</option>
+                            <option value="Quirky">Quirky</option>
+                        </select>
+                    </Td>
                 </tr>
                 <tr>
                     <td>Category</td>
-                    <td></Td>
+                    <td><select id="newPigCategory">
+                            <option value="" selected="selected">Select Category</option>
+                            <option value="Grey">Grey</option>
+                            <option value="Chestnut">Chestnut</option>
+                            <option value="White">White</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </Td>
                 </tr>
                 <tr>
-                    <td>
-                        <dynamic class="attribute"></dynamic>
-                    </td>
-                    <td></Td>
+                    <td>Breed</td>
+                    <td><select id="breedOptions">
+                            <option value="" selected="selected">Please
+                                select Category first
+                            </option>
+                        </select>
+                    </Td>
                 </tr>
                 <tr>
-                    <td>
-                        <dynamic class="value"></dynamic>
-                    </td>
-                    <td></Td>
+                    <td id="attribute"></td>
+                    <td id="attributeValue"></Td>
                 </tr>
             </table>
             <button id="addPig">Add</button>
@@ -122,6 +160,7 @@
             </table>
         </form>
     </section>
+    <pre class="error" id="error"></pre>
 </body>
 
 </html>

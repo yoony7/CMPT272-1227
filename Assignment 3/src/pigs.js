@@ -6,7 +6,7 @@ System.register([], function (exports_1, context_1) {
         setters: [],
         execute: function () {
             Pig = class Pig {
-                constructor(id, name, category, breed, attribute, height, weight) {
+                constructor(id, name, category, breed, attribute, attValue, height, weight, personality) {
                     this.id = id;
                     this.name = name;
                     this.category = category;
@@ -14,6 +14,8 @@ System.register([], function (exports_1, context_1) {
                     this.attribute = attribute;
                     this.height = height;
                     this.weight = weight;
+                    this.personality = personality;
+                    this.attValue = attValue;
                 }
             };
             exports_1("Pig", Pig);

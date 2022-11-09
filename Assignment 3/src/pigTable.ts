@@ -3,6 +3,7 @@ import { Categories } from './pigs'
 import { Breeds } from './pigs'
 import { Attributes } from './pigs'
 import { Personalities } from './pigs'
+import { Languages } from './pigs'
 
 interface PigTableInterface {
     add(p: Pig): void

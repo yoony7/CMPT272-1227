@@ -4,6 +4,8 @@ export const enum Breeds {/*Grey*/ Bach, Mozart, Beethoven, Elgar,/*Chestnut*/ M
 
 export const enum Attributes { Swimming, Speaking, Running, Strength } //pig attributes
 
+export const enum Languages { English, Korean, French, German, Spanish, Japanese }
+
 export const enum Personalities { Hardy, Lonely, Brave, Adamant, Naughty, Bold, Docile, Relaxed, Impish, Lax, Timid, Hasty, Serious, Jolly, Naive, Modest, Mild, Quiet, Bashful, Rash, Calm, Gentle, Sassy, Careful, Quirky } // pig personalities
 
 
@@ -13,10 +15,12 @@ export class Pig {
     readonly category: Categories
     readonly breed: Breeds
     readonly attribute: Attributes
-    readonly height: number
-    readonly weight: number
+    readonly attValue: string
+    readonly height: string
+    readonly weight: string
+    readonly personality: Personalities
 
-    constructor(id: number, name: string, category: Categories, breed: Breeds, attribute: Attributes, height: number, weight: number) {
+    constructor(id: number, name: string, category: Categories, breed: Breeds, attribute: Attributes, attValue: string, height: string, weight: string, personality: Personalities) {
         this.id = id
         this.name = name
         this.category = category
@@ -24,8 +28,10 @@ export class Pig {
         this.attribute = attribute
         this.height = height
         this.weight = weight
+        this.personality = personality
+        this.attValue = attValue
     }
 }
 
-export const breedMap = new Map<Categories, Breeds>()
-export const attMap = new Map<Categories, Attributes>()
+export var breedMap = new Map<Categories, Breeds>()
+export var attMap = new Map<Categories, Attributes>()
